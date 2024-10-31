@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#post1">Post 1</a></li>
+            <li><a href="#post2">Post 2</a></li>
+            <li><a href="#post3">Post 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Posts -->
+    <div class="blog-post" id="post1">
+        <div class="blog-post" id="post1">
+            <h2>Atomic Habits</h2>
+            <p><em>Published on:16 October 2018</em></p>
+            <img src="ah.webp" alt="Image for Post 1">
+            <p>Atomic Habits by James Clear is a practical guide to building good habits and breaking bad ones. The book explains how small, consistent changes can lead to remarkable improvements over time. Clear dives into the science of habit formation, emphasizing that it’s not about making huge changes but rather focusing on tiny improvements that compound. He introduces the idea of identity-based habits, where you change who you believe you are to support long-lasting changes in behavior. Using actionable advice and examples, Atomic Habits shows how to design environments and systems that make positive habits easier to follow and negative ones harder to sustain. It’s a popular resource for anyone interested in personal development and creating lasting change in their life.</p>
+        </div>
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <ul class="comments-list"></ul>
+            <input type="text" id="commentName1" placeholder="Your name">
+            <textarea id="commentMessage1" placeholder="Your comment"></textarea>
+            <button onclick="submitComment('commentName1', 'commentMessage1', 'comments-list1')">Submit</button>
+        </div>
+    </div>
+
+    <div class="blog-post" id="post2">
+        <div class="blog-post" id="post2">
+            <h2>The 7 Habits of Highly Effective People
+            </h2>
+            <p><em>Published on:15 August 1989</em></p>
+            <img src="bMt.jpg" alt="Image for Post 2">
+            <p>
+                The 7 Habits of Highly Effective People by Stephen R. Covey is a classic guide to personal and professional success, focused on building character and lasting habits for effectiveness. It introduces seven core habits that encourage personal growth, accountability, and strong relationships, such as being proactive, setting goals, prioritizing, and understanding others deeply. Rather than offering quick fixes, Covey’s approach emphasizes internal changes that lead to meaningful, long-term improvements. This book is popular among people of all backgrounds for its timeless insights into balancing work, family, and personal goals, making it a go-to resource for anyone aiming to lead a fulfilling and productive life.</p>
+        </div>
+        
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <ul class="comments-list"></ul>
+            <input type="text" id="commentName2" placeholder="Your name">
+            <textarea id="commentMessage2" placeholder="Your comment"></textarea>
+            <button onclick="submitComment('commentName2', 'commentMessage2', 'comments-list2')">Submit</button>
+        </div>
+    </div>
+
+    <div class="blog-post" id="post3">
+        <h2>Introduction to Algorithms</h2>
+        <p><em>Published on: 5 April 2022</em></p>
+        <img src="algo.jpg" alt="Image for Post 3">
+        <p>Introduction to Algorithms, often called "CLRS," is a foundational book for understanding algorithms and data structures in computer science. It spans a broad range of topics, from simple sorting and searching to more advanced concepts like dynamic programming and graph theory, using clear pseudocode that works across programming languages. The book explains how algorithms work and provides tools for analyzing their efficiency, covering both time and space complexity. It includes detailed explanations and practice exercises, making it ideal for students, professionals, and anyone looking to build a solid foundation in algorithms. Though challenging, it’s widely respected as a comprehensive guide for mastering algorithmic concepts.</p>
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <ul class="comments-list"></ul>
+            <input type="text" id="commentName3" placeholder="Your name">
+            <textarea id="commentMessage3" placeholder="Your comment"></textarea>
+            <button onclick="submitComment('commentName3', 'commentMessage3', 'comments-list3')">Submit</button>
+        </div>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+</html>
